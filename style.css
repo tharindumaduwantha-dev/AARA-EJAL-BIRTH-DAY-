@@ -279,6 +279,33 @@ h1 em, h2 em { color: var(--rose); font-weight: 500; }
 .scroll-cue { display: flex; position: absolute; right: 0; bottom: 29px; left: 0; gap: 13px; align-items: center; justify-content: center; color: #bd9bb3; font-size: 8px; letter-spacing: .24em; }
 .scroll-cue span { width: 35px; height: 1px; background: #e5c9dc; }
 
+.video-section { background: linear-gradient(180deg, #fffdfc, #fff7fb); }
+.video-card {
+  max-width: 860px;
+  margin: 45px auto 0;
+  padding: 13px 13px 18px;
+  border: 1px solid #ecd8e5;
+  background: #fffdfb;
+  box-shadow: var(--shadow);
+}
+.video-frame {
+  overflow: hidden;
+  border: 1px solid #ead1df;
+  background: #422c43;
+}
+.video-frame video {
+  display: block;
+  width: 100%;
+  max-height: 490px;
+  background: #422c43;
+}
+.video-caption {
+  margin: 15px 0 0;
+  color: #a58ca0;
+  font: italic 14px "Playfair Display", serif;
+  text-align: center;
+}
+
 .countdown-section {
   padding: 72px 7% 78px;
   background: linear-gradient(135deg, #fff7fb, #fffdf9);
@@ -389,6 +416,7 @@ footer { display: flex; padding: 23px 7%; align-items: center; justify-content: 
   .countdown-section { padding: 58px 22px 62px; }.countdown-card { padding: 34px 12px 29px; }
   .countdown { gap: 2px; }.countdown-unit { min-width: 0; flex: 1; }.countdown-unit strong { font-size: clamp(23px, 8vw, 34px); }
   .countdown-unit span { font-size: 7px; letter-spacing: .08em; }.countdown-separator { font-size: 19px; }.countdown-date { font-size: 10px; line-height: 1.7; }
+  .video-card { margin-top: 32px; padding: 8px 8px 14px; }.video-caption { font-size: 13px; }
   .details-grid { max-width: 370px; margin-top: 35px; grid-template-columns: 1fr; gap: 13px; }.detail-card { min-height: 260px; }
   .princess-grid { margin-top: 32px; grid-template-columns: repeat(2, 1fr); gap: 12px; }.princess-card { padding: 19px 8px; }.princess-halo { width: 67px; height: 67px; }
   .garden-note { font-size: 13px; line-height: 1.8; }.closing-section { padding: 65px 22px 60px; }.closing-card { padding: 55px 18px 58px; }
